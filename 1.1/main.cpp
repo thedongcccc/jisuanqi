@@ -1,11 +1,14 @@
-#include "widget.h"
 
+#include "Mainwindow.h"
 #include <QApplication>
-
+#include <math.h>
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Widget w;
+    MainWindow w;
     w.show();
+    w.setFixedSize(600,500);
+    w.setWindowTitle("计算器");
+    w.myLayout();
     return a.exec();
 }
